@@ -1,6 +1,8 @@
 # docker_ogn_receiver
 docker container for OGN receiver (glidernet.org)
 
+Tested on Odroid HC-4 hardware (armhf) running Debian Bullseye.
+
 Use commands below to build the docker image
 ```
 docker build -t 'ogn_receiver' .
