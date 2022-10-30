@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:   
+  ogn:
+    image: ogn_receiver
+    container_name: ogn
+    volumes:
+      - ./config:/ogn/rtlsdr-ogn/config
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+    ports:
+      - 8180:8080
+      - 8181:8081
+    restart: on-failure
+    
+
+    
